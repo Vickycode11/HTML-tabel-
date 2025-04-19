@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Colspan and Rowspan Example</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 70%;
+      margin: 20px auto;
+    }
+    th, td {
+      border: 1px solid #444;
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background-color: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+
+<h2 style="text-align:center;">STUDENT MARKSHEET</h2>
+
+<table>
+  <tr>
+    <th rowspan="2">Roll No</th>
+    <th rowspan="2">Name</th>
+    <th colspan="2">Marks</th>
+  </tr>
+  <tr>
+    <th>Core java </th>
+    <th>Computer Network</th>
+  </tr>
+  <tr>
+    <td>CS160</td>
+    <td>Sumit</td>
+    <td>56</td>
+    <td>78</td>
+  </tr>
+  <tr>
+    <td>CS161</td>
+    <td>Vicky</td>
+    <td colspan="2">Absent</td> <!-- Colspan used -->
+  </tr>
+  <tr>
+    <td rowspan="2">CS162</td> <!-- Rowspan used -->
+    <td>Abhishek</td>
+    <td>65</td>
+    <td>72</td>
+  </tr>
+  <tr>
+    <td>Abhishek (Repeat)</td>
+    <td>65</td>
+    <td>72</td>
+  </tr>
+</table>
+
+</body>
+</html>
